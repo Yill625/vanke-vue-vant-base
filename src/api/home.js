@@ -1,5 +1,3 @@
-
-
 import { get } from '@/utils/request'
 
 export const getDemoData = (data = {}) => {

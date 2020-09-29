@@ -1,4 +1,3 @@
-
 <template>
   <div id="app">
     <transition :name="transitionName">

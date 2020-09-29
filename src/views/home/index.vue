@@ -1,4 +1,3 @@
-
 <template>
   <div class="home">
     <van-notice-bar

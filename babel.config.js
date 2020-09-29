@@ -1,4 +1,3 @@
-
 const prodPlugin = []
 // 如果是生产环境，则自动清理掉打印的日志，但保留error 与 warn
 if (process.env.NODE_ENV === 'production') {

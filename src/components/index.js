@@ -1,4 +1,3 @@
-
 // 扫描所有的组件
 const files = require.context('./', true, /^\.\/[\w-_]+\/index\.(js|vue)$/)
 
