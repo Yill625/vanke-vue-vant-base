@@ -1,11 +1,3 @@
-/*
- * @Author: 子君
- * @Date: 2020-07-08 16:12:32
- * @LastEditors: 子君
- * @LastEditTime: 2020-07-14 13:50:58
- * @Description: 文件说明
- * @FilePath: \vue-base\babel.config.js
- */
 
 const prodPlugin = []
 // 如果是生产环境，则自动清理掉打印的日志，但保留error 与 warn
