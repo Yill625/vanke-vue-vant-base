@@ -16,9 +16,11 @@ export default {
   },
   created() {
     this.$navigation.on('forward', () => {
+      console.log('页面前进了')
       this.transitionName = 'van-slide-right'
     })
     this.$navigation.on('back', () => {
+      console.log('页面后退了')
       this.transitionName = 'van-slide-left'
     })
   }
