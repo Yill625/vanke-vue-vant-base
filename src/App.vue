@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="scss">
 #app {
   height: 100vh;
   font-family: PingFangSC-Regular;

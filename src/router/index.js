@@ -54,6 +54,14 @@ routes.push(
       meta: {
         title: '页面走丢了'
       }
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('@/views/home/test'),
+      meta: {
+        title: '页面走丢了'
+      }
     }
   ]
 )

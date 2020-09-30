@@ -8,14 +8,19 @@
     "email": "1451965647@qq.com"
   },
   "repository": {
-    "type":"git",
-    "url":"https://github.com/snowzijun/vue-vant-base"
+    "type": "git",
+    "url": "https://github.com/snowzijun/vue-vant-base"
   },
   "license": "MIT",
   "engines": {
     "node": ">= 10.16"
   },
-  "keywords": ["Vue","Vant","开箱即用","前端框架"],
+  "keywords": [
+    "Vue",
+    "Vant",
+    "开箱即用",
+    "前端框架"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -64,6 +69,8 @@
     "postcss-px-to-viewport": "^1.1.1",
     "postcss-pxtorem": "^5.1.1",
     "prettier": "^1.19.1",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
     "stylelint": "^13.6.0",
     "stylelint-config-recess-order": "^2.0.4",
     "stylelint-config-standard": "^20.0.0",

@@ -11,6 +11,7 @@
       <van-cell title="使用日期工具类" :value="`今天是${currentDate}`" />
       <van-cell title="你看，右下角有一个vConsole,用来调试的" />
       <van-cell title="你再看，地址栏有一个?VNK=xxx,这是路由缓存" />
+      <van-cell title="跳转" @click="toTest" />
     </van-list>
   </div>
 </template>
@@ -43,6 +44,9 @@ export default {
   created() {},
 
   methods: {
+    toTest() {
+      this.$router.push({ name: 'test' })
+    },
     @confirm('这是通过装饰器添加的确认信息', '提示')
     $_handleUseDecorator() {
       console.log(`
@@ -71,7 +75,7 @@ export default {
   }
 }
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .home {
   /** 审查元素，这个样式会转换为 font-size: 4.267vw; */
   font-size: 16px;
