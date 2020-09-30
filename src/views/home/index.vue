@@ -1,9 +1,6 @@
 <template>
   <div class="home">
-    <van-notice-bar
-      scrollable
-      text="关注微信公众号【前端有的玩】，我们一起玩前端"
-    />
+    <van-notice-bar scrollable text="demo" />
     <van-list>
       <van-cell
         title="点击使用confirm装饰器"
