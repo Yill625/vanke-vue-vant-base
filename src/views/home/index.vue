@@ -41,7 +41,10 @@ export default {
       currentDate: format(new Date(), DATE_FMT)
     }
   },
-  created() {},
+  created() {
+    console.log(process.env.NODE_ENV)
+    console.log(process.env.VUE_APP_MODE)
+  },
 
   methods: {
     toTest() {
