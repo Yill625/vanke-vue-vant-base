@@ -25,7 +25,7 @@ module.exports = {
   chainWebpack: config => {
     // 项目标题
     config.plugin('html').tap(args => {
-      args[0].title = '前端有的玩'
+      args[0].title = '项目标题'
       return args
     })
     webpackConfig(config)
