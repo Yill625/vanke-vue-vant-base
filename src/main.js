@@ -26,9 +26,9 @@ Vue.use(Navigation, {
   router,
   store
 })
-
+console.log(process.env)
 // 开发环境下面使用vConsole进行调试
-if (process.env.NODE_ENV === 'development') {
+if (process.env.VUE_APP_IS_SHOW_CONSOLE === 'true') {
   const VConsole = require('vconsole')
   new VConsole()
 }

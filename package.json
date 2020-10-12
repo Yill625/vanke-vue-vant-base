@@ -22,7 +22,7 @@
     "前端框架"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --mode production",
     "stylelint": "stylelint src/**/*.{html,vue,css,sass,scss} --fix",
     "eslint": "vue-cli-service lint",
     "lint": "yarn eslint && yarn stylelint",
