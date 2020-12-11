@@ -7,7 +7,9 @@ import { Dialog } from 'vant'
  * @param {*} cancelFn 取消回调函数
  */
 export function confirm(message, title = '提示', cancelFn = () => {}) {
+  console.log(11111)
   return function(target, name, descriptor) {
+    console.log(descriptor)
     const originFn = descriptor.value
     descriptor.value = async function(...rest) {
       try {

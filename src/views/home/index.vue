@@ -21,7 +21,7 @@
 import { List, NoticeBar, Cell, Notify } from 'vant'
 
 // 使用装饰器
-import { confirm } from '@/decorator'
+import { confirm, debounce } from '@/decorator'
 
 // 使用日期工具类
 import { format, DATE_FMT } from '@/utils/date'
@@ -47,8 +47,10 @@ export default {
   },
 
   methods: {
+    @debounce(1000)
     toTest() {
-      this.$router.push({ name: 'test' })
+      console.log(1111)
+      // this.$router.push({ name: 'test' })
     },
     @confirm('这是通过装饰器添加的确认信息', '提示')
     $_handleUseDecorator() {

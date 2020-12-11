@@ -49,7 +49,7 @@ module.exports = {
     }
   },
   devServer: {
-    port: 6666,
+    port: 1666,
     proxy: {
       '^/api': {
         target: DEV_URL,
