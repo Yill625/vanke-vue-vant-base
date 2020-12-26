@@ -1,5 +1,8 @@
 const webpackConfig = require('./config/webpack.config.js')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
+const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin')
+const path = require('path')
+
 const isProd = process.env.NODE_ENV === 'production'
 
 // 开发模式代理地址 TODO: 按需修改
@@ -21,6 +24,22 @@ module.exports = {
         })
       )
     }
+    // 添加骨架屏设置
+    config.plugins.push(
+      new SkeletonWebpackPlugin({
+        webpackConfig: {
+          entry: {
+            app: path.join(__dirname, './src/common/skeleton/entry-skeleton.js')
+          }
+        },
+        minimize: true,
+        quiet: true,
+        router: {
+          mode: 'hash',
+          routes: [{ path: '/', skeletonId: 'skeleton1' }]
+        }
+      })
+    )
   },
   chainWebpack: config => {
     // 项目标题
