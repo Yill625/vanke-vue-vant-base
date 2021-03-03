@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover"><link rel="icon" href="favicon.ico"><title>项目标题</title><script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/vuex/3.2.0/vuex.js"></script><script src="https://cdn.bootcss.com/vue-router/3.2.0/vue-router.min.js"></script><script src="https://cdn.bootcss.com/axios/0.19.2/axios.min.js"></script><style>.spinner {
+        width: 50px;
+        height: 60px;
+        margin: 100px auto;
+        font-size: 10px;
+        text-align: center;
+      }
+
+      .spinner > div {
+        display: inline-block;
+        width: 6px;
+        height: 100%;
+        background-color: #00ad71;
+        -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+        animation: stretchDelay 1.2s infinite ease-in-out;
+      }
+
+      .spinner .rect2 {
+        -webkit-animation-delay: -1.1s;
+        animation-delay: -1.1s;
+      }
+
+      .spinner .rect3 {
+        -webkit-animation-delay: -1s;
+        animation-delay: -1s;
+      }
+
+      .spinner .rect4 {
+        -webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+      }
+
+      .spinner .rect5 {
+        -webkit-animation-delay: -0.8s;
+        animation-delay: -0.8s;
+      }
+
+      @-webkit-keyframes stretchDelay {
+        0%,
+        40%,
+        100% {
+          -webkit-transform: scaleY(0.4);
+        }
+        20% {
+          -webkit-transform: scaleY(1);
+        }
+      }
+
+      @keyframes stretchDelay {
+        0%,
+        40%,
+        100% {
+          -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+        }
+        20% {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+        }
+      }</style><style>.skeleton-header[data-v-8d16e5ac] {
+  width: 40.533vw;
+  height: 40.533vw;
+  margin: 16vw auto;
+  margin-top: 16vw;
+  background: grey;
+}
+.skeleton-block[data-v-8d16e5ac] {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.133vw;
+}</style><link href="css/chunk-5539eaad.8a202642.css" rel="prefetch"><link href="js/chunk-2d0c93d6.2e66c133.js" rel="prefetch"><link href="js/chunk-2d22ce19.1c65b196.js" rel="prefetch"><link href="js/chunk-5539eaad.3d0a9a5d.js" rel="prefetch"><link href="css/app.b7defc55.css" rel="preload" as="style"><link href="css/chunk-vendors.2c89cf68.css" rel="preload" as="style"><link href="js/app.2375b2d7.js" rel="preload" as="script"><link href="js/chunk-vendors.3fa99bef.js" rel="preload" as="script"><link href="css/chunk-vendors.2c89cf68.css" rel="stylesheet"><link href="css/app.b7defc55.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but 项目标题 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><div data-server-rendered="true"><div id="skeleton1" class="skeleton-wrapper" data-v-8d16e5ac><header class="skeleton-header" data-v-8d16e5ac></header><section class="skeleton-block" data-v-8d16e5ac><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTA4MCAyNjEiPjxkZWZzPjxwYXRoIGlkPSJiIiBkPSJNMCAwaDEwODB2MjYwSDB6Ii8+PGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSIgeD0iLTUwJSIgeT0iLTUwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij48ZmVPZmZzZXQgZHk9Ii0xIiBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+PGZlQ29sb3JNYXRyaXggaW49InNoYWRvd09mZnNldE91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAuOTMzMzMzMzMzIDAgMCAwIDAgMC45MzMzMzMzMzMgMCAwIDAgMCAwLjkzMzMzMzMzMyAwIDAgMCAxIDAiLz48L2ZpbHRlcj48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDEpIj48dXNlIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNhKSIgeGxpbms6aHJlZj0iI2IiLz48dXNlIGZpbGw9IiNGRkYiIHhsaW5rOmhyZWY9IiNiIi8+PHBhdGggZmlsbD0iI0Y2RjZGNiIgZD0iTTIzMCA0NGg1MzN2NDZIMjMweiIvPjxyZWN0IHdpZHRoPSIxNzIiIGhlaWdodD0iMTcyIiB4PSIzMCIgeT0iNDQiIGZpbGw9IiNGNkY2RjYiIHJ4PSI0Ii8+PHBhdGggZmlsbD0iI0Y2RjZGNiIgZD0iTTIzMCAxMThoMzY5djMwSDIzMHpNMjMwIDE4MmgzMjN2MzBIMjMwek04MTIgMTE1aDIzOHYzOUg4MTJ6TTgwOCAxODRoMjQydjMwSDgwOHpNOTE3IDQ4aDEzM3YzN0g5MTd6Ii8+PC9nPjwvc3ZnPg==" data-v-8d16e5ac><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTA4MCAyNjEiPjxkZWZzPjxwYXRoIGlkPSJiIiBkPSJNMCAwaDEwODB2MjYwSDB6Ii8+PGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSIgeD0iLTUwJSIgeT0iLTUwJSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij48ZmVPZmZzZXQgZHk9Ii0xIiBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+PGZlQ29sb3JNYXRyaXggaW49InNoYWRvd09mZnNldE91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAuOTMzMzMzMzMzIDAgMCAwIDAgMC45MzMzMzMzMzMgMCAwIDAgMCAwLjkzMzMzMzMzMyAwIDAgMCAxIDAiLz48L2ZpbHRlcj48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDEpIj48dXNlIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNhKSIgeGxpbms6aHJlZj0iI2IiLz48dXNlIGZpbGw9IiNGRkYiIHhsaW5rOmhyZWY9IiNiIi8+PHBhdGggZmlsbD0iI0Y2RjZGNiIgZD0iTTIzMCA0NGg1MzN2NDZIMjMweiIvPjxyZWN0IHdpZHRoPSIxNzIiIGhlaWdodD0iMTcyIiB4PSIzMCIgeT0iNDQiIGZpbGw9IiNGNkY2RjYiIHJ4PSI0Ii8+PHBhdGggZmlsbD0iI0Y2RjZGNiIgZD0iTTIzMCAxMThoMzY5djMwSDIzMHpNMjMwIDE4MmgzMjN2MzBIMjMwek04MTIgMTE1aDIzOHYzOUg4MTJ6TTgwOCAxODRoMjQydjMwSDgwOHpNOTE3IDQ4aDEzM3YzN0g5MTd6Ii8+PC9nPjwvc3ZnPg==" data-v-8d16e5ac></section></div></div><script>var pathname=window.location.pathname,hash=window.location.hash,skeletons=[{id:"skeleton1",el:document.querySelector("#skeleton1")}],isMatched=function(e,t){return"hash"===t?e.test(hash.replace("#","")):"history"===t&&e.test(pathname)},showSkeleton=function(e){for(var t=0;t<skeletons.length;t++){var s=skeletons[t];e===s.id?s.el.style="display:block;":s.el.style="display:none;"}};isMatched(/^\/(?:\/)?$/i,"hash")&&showSkeleton("skeleton1");</script><div class="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div><script src="js/chunk-vendors.3fa99bef.js"></script><script src="js/app.2375b2d7.js"></script></body></html>
